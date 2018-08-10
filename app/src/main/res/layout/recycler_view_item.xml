@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:orientation="horizontal"
+    android:background="@drawable/border"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:paddingLeft="10dp"
+    android:elevation="3dp">
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_text"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="7.5"
+        android:layout_gravity="center"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_time"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:textSize="15dp"/>
+    <CheckBox
+        android:id="@+id/alarmtimer"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/check"
+        android:button="@null"/>
+
+</LinearLayout>
+
+</LinearLayout>

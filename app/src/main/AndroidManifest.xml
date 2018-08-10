@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myday.dong.myday">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoko"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoko"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddActivity"
+            android:label=""
+            android:theme="@style/AppTheme.AddStyle" />
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>
